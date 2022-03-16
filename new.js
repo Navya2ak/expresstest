@@ -5,8 +5,8 @@ import mongoose from "mongoose"
 import bodyParser from "body-parser"
 const url='mongodb://localhost:5000/users'
 mongoose.connect(url,{useNewUrlParser:true})
-const c=mongoose.connection
-c.on('open',()=>console.log("connected"))
+const con=mongoose.connection
+con.on('open',()=>console.log("connected"))
 
 
 // var Schema =mongoose.Schema
